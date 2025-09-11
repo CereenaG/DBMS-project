@@ -47,7 +47,8 @@ pip (Python package installer)
 
 4️⃣ Database Initialization
 
-The project uses a pre-configured SQLite database named hospital.db. If you want to reset or initialize it, you can run the database initialization script (if provided), or ensure the following tables exist:
+The project uses a pre-configured SQLite database.
+The following tables exist:
 
 Admins
 
