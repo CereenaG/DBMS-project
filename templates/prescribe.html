@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prescribe Medicines</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Prescribe Medicines for {{ patient_name }}</h2>
+        <form method="post">
+            <label for="medicine">Medicine:</label><br>
+            <textarea id="medicine" name="medicine" rows="3" placeholder="Enter medicines" required></textarea><br><br>
+
+           
+
+            <button type="submit">Save Prescription</button>
+        </form>
+    </div>
+</body>
+</html>

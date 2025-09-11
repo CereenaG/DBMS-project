@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f7;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #dc3545;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #b02a37;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>All Appointments</h2>
+
+    {% if appointments %}
+    <table>
+      <tr>
+        <th>Patient</th>
+        <th>Doctor</th>
+        <th>Department</th>
+        <th>Date</th>
+        <th>Status</th>
+      </tr>
+      {% for appt in appointments %}
+      <tr>
+        <td>{{ appt['patient_name'] }}</td>
+        <td>{{ appt['doctor_name'] }}</td>
+        <td>{{ appt['department'] }}</td>
+        <td>{{ appt['date'] }}</td>
+        <td>{{ appt['status'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>No appointments booked yet.</p>
+    {% endif %}
+
+    <form action="{{ url_for('logout') }}">
+      <button type="submit">Logout</button>
+    </form>
+  </div>
+</body>
+</html>
