@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pharmacy Dashboard</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Prescriptions</h2>
+    {% if prescriptions %}
+        <table>
+            <tr>
+                <th>Patient Name</th>
+                <th>Doctor Name</th>
+                <th>Medicines</th>
+                <th>Date</th>
+            </tr>
+            {% for pres in prescriptions %}
+            <tr>
+                <td>{{ pres['patient_name'] }}</td>
+                <td>{{ pres['doctor_name'] }}</td>
+                <td>{{ pres['medicines'] }}</td>
+                <td>{{ pres['date'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No prescriptions yet.</p>
+    {% endif %}
+
+    <a href="{{ url_for('logout') }}"><button>Logout</button></a>
+</body>
+</html>
