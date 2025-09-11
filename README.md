@@ -1,5 +1,5 @@
-🏥 Hospital Management System (HMS)
-📋 Project Overview
+### 🏥 Hospital Management System (HMS)
+# 📋 Project Overview
 
 The Hospital Management System (HMS) is a web-based application designed to streamline and automate hospital operations. It provides separate portals for Admin, Doctors, Patients, and Pharmacy Staff to manage appointments, prescriptions, and medicine dispensing efficiently.
 
@@ -39,11 +39,11 @@ Python 3.x installed
 pip (Python package installer)
 
 2️⃣ Clone the Repository
-git clone https://github.com/yourusername/hospital-management-system.git
-cd hospital-management-system
+```git clone https://github.com/yourusername/hospital-management-system.git```
+```cd hospital-management-system ```
 
 3️⃣ Install Dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 4️⃣ Database Initialization
 
@@ -60,12 +60,12 @@ Appointments
 Prescriptions
 
 5️⃣ Running the Application
-python app.py
+```python app.py```
 
 
 Then open your browser and go to:
 
-http://127.0.0.1:5000/
+```http://127.0.0.1:5000/```
 
 ✅ Default Credentials
 
