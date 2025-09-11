@@ -1,5 +1,5 @@
-### 🏥 Hospital Management System (HMS)
-# 📋 Project Overview
+# 🏥 Hospital Management System (HMS)
+### 📋 Project Overview
 
 The Hospital Management System (HMS) is a web-based application designed to streamline and automate hospital operations. It provides separate portals for Admin, Doctors, Patients, and Pharmacy Staff to manage appointments, prescriptions, and medicine dispensing efficiently.
 
@@ -60,7 +60,7 @@ Appointments
 Prescriptions
 
 5️⃣ Running the Application
-```python app.py```
+`python app.py`
 
 
 Then open your browser and go to:
