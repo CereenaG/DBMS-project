@@ -39,8 +39,8 @@ Python 3.x installed
 pip (Python package installer)
 
 2️⃣ Clone the Repository
-```git clone https://github.com/yourusername/hospital-management-system.git```
-```cd hospital-management-system ```
+```git clone https://github.com/CereenaG/DBMS-project.git```
+```cd DBMS-project ```
 
 3️⃣ Install Dependencies
 ```pip install -r requirements.txt```
