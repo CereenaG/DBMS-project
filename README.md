@@ -5,7 +5,7 @@ The Hospital Management System (HMS) is a web-based application designed to stre
 
 This project is built using Python Flask as the backend framework, and SQLite as the database.
 
-⚡ Features
+### ⚡ Features
 
 Multi-role Authentication (Admin, Doctor, Patient, Pharmacy).
 
@@ -21,7 +21,7 @@ Secure Login & Session Management.
 
 Simple and user-friendly web interface (HTML/CSS with Jinja2).
 
-💻 Technologies Used
+### 💻 Technologies Used
 
 Backend: Python 3.x, Flask
 
@@ -31,7 +31,7 @@ Frontend: HTML, CSS, Jinja2 Templates
 
 Tools: Flask Development Server
 
-🚀 Setup Instructions
+### 🚀 Setup Instructions
 1️⃣ Prerequisites
 
 Python 3.x installed
@@ -68,7 +68,7 @@ Then open your browser and go to:
 
 ```http://127.0.0.1:5000/```
 
-✅ Default Credentials
+### ✅ Default Credentials
 
 Pharmacy Account
 
@@ -78,7 +78,7 @@ Password: pharmacy123
 
 Other accounts (Admin, Doctor, Patient) must be created through the registration system or pre-configured in the database.
 
-⚙️ System Architecture
+### ⚙️ System Architecture
 
 Client-Server Architecture:
 
