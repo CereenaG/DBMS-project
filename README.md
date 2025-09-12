@@ -1,11 +1,11 @@
 #  Hospital Management System (HMS)
-###  Project Overview
+##  Project Overview
 
 The Hospital Management System (HMS) is a web-based application designed to streamline and automate hospital operations. It provides separate portals for Admin, Doctors, Patients, and Pharmacy Staff to manage appointments, prescriptions, and medicine dispensing efficiently.
 
 This project is built using Python Flask as the backend framework, and SQLite as the database.
 
-###  Features
+##  Features
 
 Multi-role Authentication (Admin, Doctor, Patient, Pharmacy).
 
@@ -21,7 +21,7 @@ Secure Login & Session Management.
 
 Simple and user-friendly web interface (HTML/CSS with Jinja2).
 
-###  Technologies Used
+##  Technologies Used
 
 Backend: Python 3.x, Flask
 
@@ -31,44 +31,44 @@ Frontend: HTML, CSS, Jinja2 Templates
 
 Tools: Flask Development Server
 
-###  Setup Instructions
-1️.Prerequisites
+##  Setup Instructions
+#### 1️.Prerequisites
 
-Python 3.x installed
+  Python 3.x installed
+  
+  pip (Python package installer)
 
-pip (Python package installer)
+#### 2️. Clone the Repository
+  `git clone https://github.com/CereenaG/DBMS-project.git`
+    `cd DBMS-project `
 
-2️. Clone the Repository
-`git clone https://github.com/CereenaG/DBMS-project.git`
-  `cd DBMS-project `
+#### 3️. Install Dependencies
+  `pip install -r requirements.txt`
 
-3️. Install Dependencies
-`pip install -r requirements.txt`
+#### 4️. Database Initialization
 
-4️. Database Initialization
+  The project uses a pre-configured SQLite database.
+  The following tables exist:
+  
+  Admins
+  
+  Doctors
+  
+  Patients
+  
+  Appointments
+  
+  Prescriptions
 
-The project uses a pre-configured SQLite database.
-The following tables exist:
+#### 5️. Running the Application
+  `python app.py`
 
-Admins
+  
+  Then open your browser and go to:
+  
+  `http://127.0.0.1:5000/`
 
-Doctors
-
-Patients
-
-Appointments
-
-Prescriptions
-
-5️. Running the Application
-`python app.py`
-
-
-Then open your browser and go to:
-
-`http://127.0.0.1:5000/`
-
-### Default Credentials
+## Default Credentials
 
 Pharmacy Account
 
@@ -78,7 +78,7 @@ Password: pharmacy123
 
 Other accounts (Admin, Doctor, Patient) must be created through the registration system or pre-configured in the database.
 
-###  System Architecture
+##  System Architecture
 
 Client-Server Architecture:
 
